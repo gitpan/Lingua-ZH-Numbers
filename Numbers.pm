@@ -1,8 +1,8 @@
 # $File: //member/autrijus/Lingua-ZH-Numbers/Numbers.pm $ $Author: autrijus $
-# $Revision: #1 $ $Change: 1741 $ $DateTime: 2002/10/29 01:47:06 $
+# $Revision: #2 $ $Change: 1768 $ $DateTime: 2002/10/30 06:26:29 $
 
 package Lingua::ZH::Numbers;
-$Lingua::ZH::Numbers::VERSION = '0.01';
+$Lingua::ZH::Numbers::VERSION = '0.02';
 
 use 5.001;
 use strict;
@@ -17,8 +17,8 @@ Lingua::ZH::Numbers - Converts numeric values into their Chinese string equivale
 
 =head1 VERSION
 
-This document describes version 0.01 of Lingua::ZH::Numbers, released
-October 28, 2002.
+This document describes version 0.02 of Lingua::ZH::Numbers, released
+October 30, 2002.
 
 =head1 SYNOPSIS
 
@@ -75,7 +75,7 @@ $Charset = 'pinyin';
     'big5'	    => {
         mag => [ '', split(' ', "\xB8U \xBB\xF5 \xA5\xFC \xA8\xCA \xAB\xB2 \xD2\xF1 \xF6\xF8 \xB7\xBE \xBC\xEE \xA5\xBF \xB8\xFC \xB7\xA5 \xAB\xED\xAAe\xA8F \xAA\xFC\xB9\xAC\xAC\xE9 \xA8\xBA\xA5\xD1\xA5L \xA4\xA3\xA5i\xAB\xE4\xC4\xB3 \xB5L\xB6q\xA4j\xBC\xC6") ],
         ord => [ '', split(' ', "\xA4Q \xA6\xCA \xA4d") ],
-        dig => [ split(' ', "\xB9s \xA4\@ \xA4G \xA4T \xA5| \xA4\xAD \xA4\xBB\xA4C \xA4K \xA4E \xA4Q") ],
+        dig => [ split(' ', "\xB9s \xA4\@ \xA4G \xA4T \xA5| \xA4\xAD \xA4\xBB \xA4C \xA4K \xA4E \xA4Q") ],
         dot => "\xC2I",
 	neg => "\xADt",
     },

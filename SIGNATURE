@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.15.
+signed via the Module::Signature module, version 0.16.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,17 +14,17 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 06f2eb1642e58cee80dfc253b7257dd614e99f94 Changes
+SHA1 19d44b398ce505e77938f44d9840ec69a26c8261 Changes
 SHA1 5182ee6e37dbe1f84b51cb341be23373a8918b62 MANIFEST
 SHA1 4a918488e3f19df3c9ad4029c6840d89c70f2d1b Makefile.PL
-SHA1 a1c1672827c4d46807d72244b425b93b6c8e050a Numbers.pm
+SHA1 d7bdba4320f90f50dcfef3dbf343d9edfe8e973b Numbers.pm
 SHA1 28f590e0c32ab1b7586da99d3e16290eb54fa4d1 README
 SHA1 2f27ad8bb2dfe3788545679b6f20d33c8bc42c9c t/0-signature.t
 SHA1 0611a234083898dd5f557fbe256b615dcfe6c7cb t/1-basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.0 (FreeBSD)
 
-iD8DBQE9vexvtLPdNzw1AaARAiIPAJ42+p992or8SE/50w0LbsyNRlO71gCcCapM
-Q53Cu5KT97KsbG2QvyRmboQ=
-=X5i2
+iD8DBQE9v39ItLPdNzw1AaARAu60AJ4l5s/bLpQViFZcpfbcBmFbvBPilgCfbs9u
+6jvzeWAHf2ofi89rydChXFw=
+=i9Xu
 -----END PGP SIGNATURE-----

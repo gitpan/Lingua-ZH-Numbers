@@ -1,4 +1,14 @@
 ____________________________________________________________________________
+[  1768] By: autrijus                              on 2002/10/30  06:26:29
+        Log: * 0.02.
+             * Big5's digits was broken -- six get mixed with seven.
+             Thanks to Plasmaball for pointing out.
+	   ! Numbers.pm
+____________________________________________________________________________
+[  1742] By: autrijus                              on 2002/10/29  01:48:59
+        Log: * changes and signatures.
+	   + Changes SIGNATURE
+____________________________________________________________________________
 [  1741] By: autrijus                              on 2002/10/29  01:47:06
         Log: * 0.01: initial submit.
 	   + MANIFEST Makefile.PL Numbers.pm README t/0-signature.t
