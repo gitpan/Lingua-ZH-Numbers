@@ -1,0 +1,24 @@
+# $File: //member/autrijus/Lingua-ZH-Numbers/README $ $Author: autrijus $
+# $Revision: #1 $ $Change: 1741 $ $DateTime: 2002/10/29 01:47:06 $
+
+This is the README file for Lingua::ZH::Numbers, a module to
+convert numeric values into their Chinese string equivalents.
+
+* Installation
+
+Lingua::ZH::Numbers uses the standard perl module install process:
+
+cpansign -v		# see SIGNATURE for details
+perl Makefile.PL
+make
+make test
+make install
+
+* Copyright
+
+Copyright 2002 by Autrijus Tang <autrijus@autrijus.org>.
+
+All rights reserved.  You can redistribute and/or modify
+this bundle under the same terms as Perl itself.
+
+See <http://www.perl.com/perl/misc/Artistic.html>.

@@ -1,0 +1,5 @@
+____________________________________________________________________________
+[  1741] By: autrijus                              on 2002/10/29  01:47:06
+        Log: * 0.01: initial submit.
+	   + MANIFEST Makefile.PL Numbers.pm README t/0-signature.t
+	   + t/1-basic.t
