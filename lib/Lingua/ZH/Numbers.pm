@@ -1,8 +1,5 @@
-# $File: //member/autrijus/Lingua-ZH-Numbers/Numbers.pm $ $Author: autrijus $
-# $Revision: #3 $ $Change: 2319 $ $DateTime: 2002/11/23 14:00:30 $
-
 package Lingua::ZH::Numbers;
-$Lingua::ZH::Numbers::VERSION = '0.03';
+$Lingua::ZH::Numbers::VERSION = '0.04';
 
 use 5.001;
 use strict;
@@ -17,8 +14,8 @@ Lingua::ZH::Numbers - Converts numeric values into their Chinese string equivale
 
 =head1 VERSION
 
-This document describes version 0.03 of Lingua::ZH::Numbers, released
-November 23, 2002.
+This document describes version 0.04 of Lingua::ZH::Numbers, released
+September 8, 2004.
 
 =head1 SYNOPSIS
 
@@ -153,6 +150,7 @@ sub _convert {
     my $delta = $1 if $input =~ s/\.(.*)//;
     $out = $neg if $input =~ s/^\-//;
     $input =~ s/^0+//;
+    $input ||= '0';
 
     my @chunks;
     unshift @chunks, $1 while ($input =~ s/(\d{1,4})$//g);
@@ -186,7 +184,7 @@ sub _convert {
 	$out .= $dig[$_] for split(//, $delta);
     }
 
-    return $out;
+    return $out || $dig[0];
 }
 
 1;
@@ -205,7 +203,7 @@ Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2002 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
+Copyright 2002, 2003, 2004 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

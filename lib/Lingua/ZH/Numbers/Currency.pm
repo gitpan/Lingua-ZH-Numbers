@@ -1,5 +1,5 @@
 # $File: //member/autrijus/Lingua-ZH-Numbers/Numbers/Currency.pm $ $Author: autrijus $
-# $Revision: #1 $ $Change: 2319 $ $DateTime: 2002/11/23 14:00:30 $
+# $Revision: #2 $ $Change: 4128 $ $DateTime: 2003/02/08 06:01:51 $
 
 package Lingua::ZH::Numbers::Currency;
 $Lingua::ZH::Numbers::Currency::VERSION = '0.01';
@@ -61,7 +61,7 @@ number before passing it for conversion, via C<int()> or C<s/\.(.*)//>.
     'traditional'   => {
 	mag => [ '', split(' ', "\x{842c} \x{5104} \x{5146} \x{4eac} \x{5793} \x{79ed} \x{7a70} \x{6e9d} \x{6f97} \x{6b63} \x{8f09} \x{6975} \x{6046}\x{6cb3}\x{6c99} \x{963f}\x{50e7}\x{7947} \x{90a3}\x{7531}\x{4ed6} \x{4e0d}\x{53ef}\x{601d}\x{8b70} \x{7121}\x{91cf}\x{5927}\x{6578}") ],
 	ord => [ '', split(' ', "\x{62fe} \x{4f70} \x{4edf}") ],
-	dig => [ split(' ', "\x{58f9} \x{8cb3} \x{53c3} \x{8086} \x{4f0d} \x{9678} \x{67d2} \x{634c} \x{7396}") ],
+	dig => [ split(' ', "\x{96f6} \x{58f9} \x{8cb3} \x{53c3} \x{8086} \x{4f0d} \x{9678} \x{67d2} \x{634c} \x{7396}") ],
 	dot => "\x{9ede}",
 	neg => "\x{8ca0}",
 	post => "\x{5713}\x{6574}",

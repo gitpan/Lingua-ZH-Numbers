@@ -1,28 +1,17 @@
-____________________________________________________________________________
-[  2320] By: autrijus                              on 2002/11/23  14:00:49
-        Log: * This be 0.03, the Lingua::ZH::Numbers::Currency edition.
-	   ! MANIFEST README
-____________________________________________________________________________
-[  2319] By: autrijus                              on 2002/11/23  14:00:30
-        Log: * Support for currency values, prompted by Dieter Simader.
-	   + Numbers/Currency.pm
-	   ! Numbers.pm t/1-basic.t
-____________________________________________________________________________
-[  1769] By: autrijus                              on 2002/10/30  06:27:28
-        Log: * changes and signatures.
-	   ! Changes SIGNATURE
-____________________________________________________________________________
-[  1768] By: autrijus                              on 2002/10/30  06:26:29
-        Log: * 0.02.
-             * Big5's digits was broken -- six get mixed with seven.
-             Thanks to Plasmaball for pointing out.
-	   ! Numbers.pm
-____________________________________________________________________________
-[  1742] By: autrijus                              on 2002/10/29  01:48:59
-        Log: * changes and signatures.
-	   + Changes SIGNATURE
-____________________________________________________________________________
-[  1741] By: autrijus                              on 2002/10/29  01:47:06
-        Log: * 0.01: initial submit.
-	   + MANIFEST Makefile.PL Numbers.pm README
-	   + t/0-signature.t t/1-basic.t
+[Changes for 0.04 - 2004-09-08]
+
+* "Zero" is now supported, prompted by Chia-Liang Kao.
+
+[Changes for 0.03 - 2002-11-23]
+
+* Support for currency values, prompted by Dieter Simader.
+* New module: Lingua::ZH::Numbers::Currency.
+
+[Changes for 0.02 - 2002-10-30]
+
+* Big5's digits was broken -- six got mixed with seven.
+  (Thanks to Plasmaball for pointing out.)
+
+[Changes for 0.02 - 2002-10-29]
+
+* Initial release.

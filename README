@@ -1,5 +1,5 @@
 # $File: //member/autrijus/Lingua-ZH-Numbers/README $ $Author: autrijus $
-# $Revision: #2 $ $Change: 2320 $ $DateTime: 2002/11/23 14:00:49 $
+# $Revision: #2 $ $Change: 2320 $ $DateTime: 2002/11/23 15:00:49 $
 
 This is the README file for Lingua::ZH::Numbers, a module to
 convert numeric values into their Chinese string equivalents.
@@ -11,15 +11,15 @@ conversion from currency values into Chinese equivalents.
 
 Lingua::ZH::Numbers uses the standard perl module install process:
 
-cpansign -v		# see SIGNATURE for details
+cpansign -v		# optional;see SIGNATURE for details
 perl Makefile.PL
-make
+make			# or "nmake" on Win32
 make test
 make install
 
 * Copyright
 
-Copyright 2002 by Autrijus Tang <autrijus@autrijus.org>.
+Copyright 2002, 2003, 2004 by Autrijus Tang <autrijus@autrijus.org>.
 
 All rights reserved.  You can redistribute and/or modify
 this bundle under the same terms as Perl itself.

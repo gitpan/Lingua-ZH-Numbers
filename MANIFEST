@@ -1,9 +1,18 @@
 Changes
-MANIFEST			This list of files
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+lib/Lingua/ZH/Numbers.pm
+lib/Lingua/ZH/Numbers/Currency.pm
 Makefile.PL
-Numbers.pm
-Numbers/Currency.pm
+MANIFEST			This list of files
+META.yml			Module meta-data (added by MakeMaker)
 README
-SIGNATURE
+SIGNATURE			Public-key signature (added by MakeMaker)
 t/0-signature.t
 t/1-basic.t

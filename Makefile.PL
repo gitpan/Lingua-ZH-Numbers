@@ -1,21 +1,11 @@
 #!/usr/bin/env perl
-# $File: //member/autrijus/Lingua-ZH-Numbers/Makefile.PL $ $Author: autrijus $
-# $Revision: #1 $ $Change: 1741 $ $DateTime: 2002/10/29 01:47:06 $
 
-require 5.001;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile (
-    AUTHOR		=> 'Autrijus Tang (autrijus@autrijus.org)',
-    ABSTRACT		=> 'Converts numeric values into their Chinese string equivalents',
-    NAME		=> 'Lingua::ZH::Numbers',
-    VERSION_FROM	=> 'Numbers.pm',
-    DISTNAME		=> 'Lingua-ZH-Numbers',
-    BINARY_LOCATION	=> 'x86/Lingua-ZH-Numbers.tar.gz',
+name		('Lingua-ZH-Numbers');
+author		('Autrijus Tang <autrijus@autrijus.org>');
+abstract	('Converts numeric values into their Chinese string equivalents');
+license		('perl');
+version_from	('lib/Lingua/ZH/Numbers.pm');
 
-    dist		=> {
-        COMPRESS	=> 'gzip -9',
-        SUFFIX		=> '.gz',
-    },
-);
-
+WriteAll( sign => 1 );
