@@ -1,8 +1,8 @@
 # $File: //member/autrijus/Lingua-ZH-Numbers/Numbers.pm $ $Author: autrijus $
-# $Revision: #2 $ $Change: 1768 $ $DateTime: 2002/10/30 06:26:29 $
+# $Revision: #3 $ $Change: 2319 $ $DateTime: 2002/11/23 14:00:30 $
 
 package Lingua::ZH::Numbers;
-$Lingua::ZH::Numbers::VERSION = '0.02';
+$Lingua::ZH::Numbers::VERSION = '0.03';
 
 use 5.001;
 use strict;
@@ -17,8 +17,8 @@ Lingua::ZH::Numbers - Converts numeric values into their Chinese string equivale
 
 =head1 VERSION
 
-This document describes version 0.02 of Lingua::ZH::Numbers, released
-October 30, 2002.
+This document describes version 0.03 of Lingua::ZH::Numbers, released
+November 23, 2002.
 
 =head1 SYNOPSIS
 
@@ -107,7 +107,17 @@ sub import {
 
 sub charset {
     my ($class, $charset) = @_;
-    $Charset = lc($charset) if exists $MAP{lc($charset)};
+
+    no strict 'refs';
+    return ${"$class\::Charset"} unless defined $charset;
+
+    $charset = 'gb' if $charset =~ /^gb/i or $charset =~ /^euc-cn$/i;
+    $charset = 'big5' if $charset =~ /big5/i;
+    ${"$class\::Charset"} = lc($charset) if exists ${"$class\::MAP"}{lc($charset)};
+}
+
+sub map {
+    return \%MAP;
 }
 
 sub new {
@@ -126,14 +136,18 @@ sub get_string {
 }
 
 sub number_to_zh {
-    my ($input) = @_;
+    __PACKAGE__->_convert($MAP{$Charset}, @_);
+}
+
+sub _convert {
+    my ($class, $map, $input) = @_;
     $input =~ s/[^\d\.\-]//;
 
-    my @dig = @{$MAP{$Charset}{dig}};
-    my @ord = @{$MAP{$Charset}{ord}};
-    my @mag = @{$MAP{$Charset}{mag}};
-    my $dot = $MAP{$Charset}{dot};
-    my $neg = $MAP{$Charset}{neg};
+    my @dig = @{$map->{dig}};
+    my @ord = @{$map->{ord}};
+    my @mag = @{$map->{mag}};
+    my $dot = $map->{dot};
+    my $neg = $map->{neg};
 
     my $out = '';
     my $delta = $1 if $input =~ s/\.(.*)//;
